@@ -1,6 +1,7 @@
 import {
   Autocomplete,
   Box,
+  Button,
   Container,
   Grid,
   // MenuItem,
@@ -12,6 +13,7 @@ import BGLanding from "../assets/backgrounds/image.png";
 import Man from "../assets/Man";
 import { grey } from "@mui/material/colors";
 import { Search } from "@mui/icons-material";
+import SearchIcon from "@mui/icons-material/Search";
 
 export default function Landing() {
   return (
@@ -66,20 +68,24 @@ export default function Landing() {
               sapien, quis venenatis ante odio sit amet eros.
             </Typography>
             <Box display="flex" bgcolor="white">
-              <Search>
+              <Box display="flex">
+                <SearchIcon />
                 <Autocomplete
                   sx={{ bgcolor: "white" }}
-                  options={[{ Label: "1", label: "2" }]}
+                  options={[ "1", "2" ]}
                   disablePortal
                   renderInput={(p) => <TextField {...p} />}
                 />
-              </Search>
-              <Autocomplete
+              </Box>
+              <Box display="flex">
+                <Autocomplete
                 sx={{ bgcolor: "white" }}
-                options={[{ Label: "1", label: "2d" }]}
+                options={[ "1", "2d" ]}
                 disablePortal
                 renderInput={(p) => <TextField {...p} />}
               />
+              </Box>
+              <Button variant="contained" color="primary"></Button>
             </Box>
           </Grid>
           <Grid

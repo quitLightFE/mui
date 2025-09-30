@@ -2,14 +2,34 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { CssBaseline, GlobalStyles } from "@mui/material";
+import {
+  Button,
+  createTheme,
+  CssBaseline,
+  GlobalStyles,
+  ThemeProvider,
+} from "@mui/material";
+
+const theme = createTheme({
+  pallete: {
+    primary: {
+      main: "#FA541C",
+    },
+    secondary: {
+      main: "#8E33FF"
+    },
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CssBaseline />
-    <GlobalStyles />
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <GlobalStyles />
+      <App />
+      <Button color="primary" variant="contained"></Button>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
