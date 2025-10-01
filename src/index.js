@@ -11,9 +11,10 @@ import {
 } from "@mui/material";
 
 const theme = createTheme({
-  pallete: {
+  palette: {
     primary: {
       main: "#FA541C",
+      light: "#FDAB76"
     },
     secondary: {
       main: "#8E33FF"
@@ -28,7 +29,6 @@ root.render(
       <CssBaseline />
       <GlobalStyles />
       <App />
-      <Button color="primary" variant="contained"></Button>
     </ThemeProvider>
   </React.StrictMode>
 );
