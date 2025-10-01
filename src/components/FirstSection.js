@@ -81,10 +81,10 @@ export default function FirstSection() {
               display="block"
               mt={4}
             >
-              Step 1
+              Step 2
             </Typography>
             <Typography fontWeight="bold" mt={2} mb={1} variant="h6">
-              Create an account
+              Complete your profile
             </Typography>
             <Typography variant="p" color="textSecondary">
               Nunc nonummy metus. Donec elit libero.
@@ -108,10 +108,10 @@ export default function FirstSection() {
               display="block"
               mt={4}
             >
-              Step 1
+              Step 3
             </Typography>
             <Typography fontWeight="bold" mt={2} mb={1} variant="h6">
-              Create an account
+              Search your job
             </Typography>
             <Typography variant="p" color="textSecondary">
               Nunc nonummy metus. Donec elit libero.
